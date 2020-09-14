@@ -1,6 +1,6 @@
 const Twitter = require('twitter');
 const twitter = require('twitter');
-require('dotenv').config();
+require('dotenv').config()
 
 const Tweet = new Twitter({
 
@@ -39,4 +39,4 @@ function action(event){
 }
 var stream = Tweet.stream('statuses/filter', {track: 'cat'});
 stream.on('data', action);
-stream.on('error', erro => {console.log('Erro: ' + erro)});
+stream.on('error', err => {console.log('Erro: ' + erro)});
