@@ -39,4 +39,4 @@ function action(event){
 }
 var stream = Tweet.stream('statuses/filter', {track: 'cat'});
 stream.on('data', action);
-stream.on('error', err => {console.log('Erro: ' + erro)});
+stream.on('error', erro => {console.log('Erro: ' + erro)});
