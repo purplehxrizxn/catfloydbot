@@ -1,5 +1,4 @@
 const Twitter = require('twitter');
-const twitter = require('twitter');
 require('dotenv').config()
 
 const Tweet = new Twitter({
